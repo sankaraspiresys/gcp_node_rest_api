@@ -48,7 +48,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse requests of content-type - application/json
 app.use(bodyParser.json())
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 80
 
 app.get('/', (req, res) => {
     res.send("API Server Runinng...")
